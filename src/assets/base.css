@@ -1,0 +1,27 @@
+/* color palette and variables 
+:root {
+}
+
+
+@media (prefers-color-scheme: dark) {
+  :root {
+  }
+}
+*/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  position: relative;
+  font-weight: normal;
+}
+
+body {
+  min-height: 100vh;
+  transition: color 0.5s, background-color 0.5s;
+  font-size: 15px;
+  line-height: 1.6;
+  text-rendering: optimizeLegibility;
+}
