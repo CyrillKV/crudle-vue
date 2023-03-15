@@ -1,14 +1,3 @@
-/* color palette and variables 
-:root {
-}
-
-
-@media (prefers-color-scheme: dark) {
-  :root {
-  }
-}
-*/
-
 *,
 *::before,
 *::after {
@@ -20,8 +9,17 @@
 
 body {
   min-height: 100vh;
+  background-color: $bg-alt;
   transition: color 0.5s, background-color 0.5s;
   font-size: 15px;
   line-height: 1.6;
   text-rendering: optimizeLegibility;
+}
+
+#app {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-flow: column;
+  font-weight: normal;
 }
