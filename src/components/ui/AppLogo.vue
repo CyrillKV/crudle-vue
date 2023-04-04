@@ -5,7 +5,7 @@
 <style lang="scss">
 .logo {
   color: $btn;
-  font-weight: 900;
+  font-weight: bold;
   font-size: 2rem;
   letter-spacing: -0.3rem;
 }
