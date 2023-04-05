@@ -2,15 +2,19 @@
 import AppLogo from './ui/AppLogo.vue'
 import SearchBar from './ui/SearchBar.vue'
 import LoginButton from './ui/LoginButton.vue'
-import UserProfile from './ui/UserProfile.vue';
+import UserProfile from './ui/UserProfile.vue'
+
+import { ref } from 'vue'
+
+const isLoggedIn = ref(true)
 </script>
 
 <template>
   <header class="header">
     <AppLogo />
     <SearchBar class="header__search-bar"/>
-    <LoginButton class="header__login-btn"/>
-    <UserProfile />
+    <LoginButton v-if="!isLoggedIn" class="header__login-btn"/>
+    <UserProfile v-else class="header__profile"/>
   </header>
 </template>
 
@@ -40,5 +44,8 @@ import UserProfile from './ui/UserProfile.vue';
   color: $btn;
   background-color: $bg-main;
   border: 1px solid $btn;
+}
+.header__profile {
+  max-width: 210px;
 }
 </style>
