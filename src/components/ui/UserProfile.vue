@@ -52,14 +52,14 @@ const isExpanded = ref(false)
 
 .dropdown-menu {
   position: absolute;
-  top: 50px;
+  top: 48px;
   right: 0px;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 20px;
   padding: 10px;
-  width: 240px;
+  width: 210px;
   background-color: $bg-main;
   z-index: 999;
 }

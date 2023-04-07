@@ -46,6 +46,6 @@ const isLoggedIn = ref(true)
   border: 1px solid $btn;
 }
 .header__profile {
-  max-width: 210px;
+  width: 180px;
 }
 </style>
