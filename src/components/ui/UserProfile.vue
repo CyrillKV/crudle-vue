@@ -10,7 +10,7 @@ const isExpanded = ref(false)
     <button @click="isExpanded = !isExpanded" class="profile">
       <img class="profile__image" src="../../assets/doggo.jpg" alt="profile avatar">
       <p class="profile__name">Username</p>
-      <img class="profile__icon" src="../../assets/angle-down-solid.svg">
+      <img class="profile__icon" src="../../assets/svg/angle-down-solid.svg">
     </button>
     <transition name="dropdown">
       <div v-show="isExpanded" class="dropdown-menu">

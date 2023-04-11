@@ -2,7 +2,7 @@
 import { onBeforeMount } from "vue"
 import { usePostsStore } from "@/stores/posts"
 
-import PostComp from "@/components/PostComp.vue"
+import PostComp from "@/components/post/PostComp.vue"
 
 const postsStore = usePostsStore()
 
@@ -26,7 +26,8 @@ onBeforeMount(() => {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
   padding: 10px max(10px, max(20px, calc(50% - 620px)));
+  margin-top: 20px;
 }
 </style>

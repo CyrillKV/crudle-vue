@@ -11,7 +11,7 @@ const isLoggedIn = ref(true)
 
 <template>
   <header class="header">
-    <AppLogo />
+    <AppLogo class="header__logo"/>
     <SearchBar class="header__search-bar"/>
     <LoginButton v-if="!isLoggedIn" class="header__login-btn"/>
     <UserProfile v-else class="header__profile"/>
@@ -21,7 +21,6 @@ const isLoggedIn = ref(true)
 <style lang="scss">
 .header {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   gap: 20px;
   height: 48px;
@@ -29,16 +28,20 @@ const isLoggedIn = ref(true)
   background-color: $bg-main;
   box-shadow: $shadow;
 }
+.header__logo {
+  margin-right: auto;
+  width: 180px;
+}
 .header__search-bar {
   flex: 1;
   max-width: 800px;
-  margin: 0 auto;
 }
 .header__login-btn{
   height: 40px;
   width: 80px;
   border: none;
   font-weight: bold;
+  margin-left: auto;
 }
 .header__login-btn:hover {
   color: $btn;
@@ -47,5 +50,6 @@ const isLoggedIn = ref(true)
 }
 .header__profile {
   width: 180px;
+  margin-left: auto;
 }
 </style>

@@ -1,7 +1,7 @@
 <template>
   <div class="search-bar">
     <input class="search-bar__input" type="search" placeholder="Search Crudle">
-    <img class="search-bar__icon" src="../../assets/lense.svg">
+    <img class="search-bar__icon" src="../../assets/svg/lense.svg">
   </div>
 </template>
 
@@ -12,7 +12,7 @@
 .search-bar__input {
   height: 40px;
   width: 100%;
-  border: 1px solid $bg-alt;
+  border: 1px solid $text-alt;
   border-radius: $radius;
   padding-left: 40px;
 }

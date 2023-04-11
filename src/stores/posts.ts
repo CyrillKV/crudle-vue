@@ -12,7 +12,6 @@ export const usePostsStore = defineStore('postsStore', () => {
     try {
       const { data } = await api.fetchPosts()
       posts.value = [...data.posts]
-      console.log(posts.value)
     } 
     catch (error) {
       console.log(error)
